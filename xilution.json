@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "verify": {
+    "commands": [
+      "make verify"
+    ]
+  },
+  "build": {
+    "Test": {
+      "commands": [
+        "make build-test"
+      ]
+    },
+    "Prod": {
+      "commands": [
+        "make build-prod"
+      ]
+    },
+    "distDir": "./dist"
+  },
+  "tests": [
+    {
+      "name": "End to End Test",
+      "commands": [
+        "make test-e2e"
+      ]
+    }
+  ]
+}
