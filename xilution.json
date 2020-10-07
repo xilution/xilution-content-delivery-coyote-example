@@ -5,7 +5,7 @@
       "make verify"
     ]
   },
-  "build": {
+  "builds": {
     "Test": {
       "commands": [
         "make build-test"
@@ -18,12 +18,22 @@
     },
     "distDir": "./dist"
   },
-  "tests": [
-    {
-      "name": "End to End Test",
-      "commands": [
-        "make test-e2e"
-      ]
-    }
-  ]
+  "tests": {
+    "Test": [
+      {
+        "name": "End to End Tests",
+        "commands": [
+          "make test-e2e"
+        ]
+      }
+    ],
+    "Prod": [
+      {
+        "name": "Smoke Tests",
+        "commands": [
+          "make test-smoke"
+        ]
+      }
+    ]
+  }
 }
