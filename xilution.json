@@ -16,7 +16,7 @@
         "make build-prod"
       ]
     },
-    "distDir": "./dist"
+    "buildDir": "./build"
   },
   "tests": {
     "Test": [
