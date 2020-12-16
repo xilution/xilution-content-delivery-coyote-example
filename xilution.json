@@ -1,37 +1,22 @@
 {
   "verify": {
-    "commands": [
-      "make verify"
-    ]
+    "commands": ["make verify"]
   },
-  "builds": {
-    "Test": {
-      "commands": [
-        "make build-test"
-      ]
-    },
-    "Prod": {
-      "commands": [
-        "make build-prod"
-      ]
-    },
-    "buildDir": "./build"
+  "build": {
+    "commands": ["make build"],
+    "buildDir": "./built"
   },
   "tests": {
-    "Test": [
+    "qual": [
       {
         "name": "End to End Tests",
-        "commands": [
-          "make test-e2e"
-        ]
+        "commands": ["make test-e2e"]
       }
     ],
-    "Prod": [
+    "prod": [
       {
         "name": "Smoke Tests",
-        "commands": [
-          "make test-smoke"
-        ]
+        "commands": ["make test-smoke"]
       }
     ]
   }
