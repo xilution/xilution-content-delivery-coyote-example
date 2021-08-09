@@ -3,7 +3,7 @@
     "commands": ["make verify"]
   },
   "build": {
-    "qual": {
+    "test": {
       "commands": ["make build"],
       "buildDir": "./built"
     },
@@ -13,7 +13,7 @@
     }
   },
   "tests": {
-    "qual": [
+    "test": [
       {
         "name": "End to End Tests",
         "commands": ["make test-e2e"]
