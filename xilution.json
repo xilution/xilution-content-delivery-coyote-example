@@ -3,8 +3,14 @@
     "commands": ["make verify"]
   },
   "build": {
-    "commands": ["make build"],
-    "buildDir": "./built"
+    "qual": {
+      "commands": ["make build"],
+      "buildDir": "./built"
+    },
+    "prod": {
+      "commands": ["make build"],
+      "buildDir": "./built"
+    },
   },
   "tests": {
     "qual": [
