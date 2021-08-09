@@ -10,7 +10,7 @@
     "prod": {
       "commands": ["make build"],
       "buildDir": "./built"
-    },
+    }
   },
   "tests": {
     "qual": [
